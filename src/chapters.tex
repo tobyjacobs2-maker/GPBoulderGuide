@@ -1,4 +1,14 @@
+% import another file:
+\input{chartdata}
+
 \climbingarea{South Freeport Coffin Area}{%
+    % Add a vertical oriented histogram of difficulties on the left edge. Allow the header text to wrap around it.
+    \begin{wrapfigure}{l}{0.2\textwidth}
+      \begin{minipage}{0.15\textwidth}
+		2 Problems\\
+	    {\charttwov}
+	  \end{minipage}
+    \end{wrapfigure}
     \climbheader{This is in Freeport..}{This is public access Land Trust land.}{Park at the Pine St/South Freeport Roard intersection pullout and walk back up Pine St 200 ft.}{The area is often wet, but The Coffin boulder stays dry.}
     \climbingarea{The Coffin Boulder}{The Coffin Boulder is pretty cool.}{%
         % This is a comment

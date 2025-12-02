@@ -1,0 +1,31 @@
+% Organize the data in a table names climbdatatwo
+
+\pgfplotstableread{
+grade   sport  trad   boulder
+B/0     0      0      0
+1/2     0      0      0
+3/4     0      0      0
+5/6     0      0      1
+7/8     0      0      1
+9/10    0      0      0
+11/12   0      0      0
+}{\climbdatatwo}
+
+% Create a horizontal chart named charttwoh using the data
+% from the climbdatatwo table.
+\def\charttwoh{%
+    \begin{boulderhchart}
+        \addplot table[x=grade,y=sport]{\climbdatatwo};% chktex 1
+        \addplot table[x=grade,y=trad]{\climbdatatwo};% chktex 1
+        \addplot table[x=grade,y=boulder]{\climbdatatwo};% chktex 1
+    \end{boulderhchart}
+}
+
+% Create a vertical chart named charttwov
+\def\charttwov{%
+    \begin{bouldervchart}
+        \addplot table[y=grade,x=sport]{\climbdatatwo};% chktex 1
+        \addplot table[y=grade,x=trad]{\climbdatatwo};% chktex 1
+        \addplot table[y=grade,x=boulder]{\climbdatatwo};% chktex 1
+    \end{bouldervchart}
+}
