@@ -3,10 +3,10 @@
     \climbingarea{The Coffin Boulder}{The Coffin Boulder is pretty cool.}{%
         % A mimipage is basically a small box of content that we will use to encapsulate our image. we will make it as wide as a line of text. This is used to maintain the formatting of the other text on the page.
         \begin{minipage}{\linewidth}%
-          % We want to center the image within the minipage
+          % We want to center the image within the minipage.
           \centering
           % This particular file is likely marked as "rotated" in the EXIF data, which LaTeX ignores...so we have to manually roate it here with the "angle" setting.
-          % If you want the image smaller, you can change the width to '.5\linewidth' of some other value like that
+          % If you want the image smaller, you can change the width to '.5\linewidth' or some other value like that.
           \includegraphics[angle=270,width=\linewidth]{1201251115_HDR.jpg}
           \captionof{figure}{The Coffin V8/9}
         \end{minipage}
